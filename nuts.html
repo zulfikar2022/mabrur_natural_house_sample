@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="./js/index.js"></script>
+    <title>মাবরুর ন্যাচারাল হাউস</title>
+</head>
+
+<body>
+    <nav class="sticky top-0 bg-white shadow z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="./index.html"> <img class="h-15 overflow-hidden w-auto" src="./images/logo.png"
+                            alt="Logo"></a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6 ml-auto">
+                    <a href="./index.html" class="text-gray-700 hover:text-blue-600 font-medium">হোম</a>
+                    <a href="./dates.html" class=" hover:text-blue-600 font-medium text-gray-700">খেজুর</a>
+                    <a href="./nuts.html" class=" hover:text-blue-600 font-medium underline text-blue-600">বাদাম</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">যোগাযোগ</a>
+                    <a href="#"
+                        class="ml-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Login</a>
+                </div>
+                <!-- Hamburger -->
+                <div class="md:hidden flex items-center ml-auto">
+                    <button id="mobile-menu-button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path id="menu-icon" class="inline-flex" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+            <a href="./index.html" class="text-gray-700 hover:text-blue-600 font-medium">হোম</a>
+            <a href="./dates.html" class="block py-2 hover:text-blue-600 font-medium text-gray-700">খেজুর</a>
+            <a href="./nuts.html" class=" hover:text-blue-600 font-medium underline text-blue-600">বাদাম</a>
+            <a href="#" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">যোগাযোগ</a>
+            <a href="#" class=" px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Login</a>
+        </div>
+
+    </nav>
+    <section class="lg:mx-10 mx-4 my-10">
+        <div class="mb-8 text-center bg-gray-100 p-6 rounded-lg shadow">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+                স্বাদে ও পুষ্টিতে অনন্য—প্রতিদিন খান স্বাস্থ্যকর বাদাম!
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                শুদ্ধ, পুষ্টিকর ও সুস্বাদু বাদাম আমাদের স্বাস্থ্যের জন্য অত্যন্ত উপকারী। বাদামে রয়েছে প্রোটিন,
+                স্বাস্থ্যকর চর্বি, ফাইবার, ভিটামিন ও খনিজ, যা হৃদযন্ত্র, মস্তিষ্ক ও ত্বকের জন্য উপকারী। প্রতিদিনের
+                খাদ্যতালিকায় বাদাম রাখুন, সুস্থ থাকুন।
+            </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-1.jpg" alt="Nut 1" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">কাজু বাদাম</h3>
+                <p class="text-gray-600 text-sm mb-2">সুস্বাদু ও পুষ্টিকর কাজু বাদাম।</p>
+                <span class="text-blue-600 font-bold">৳ ৫০০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-1.jpg" alt="Nut 2" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">আখরোট</h3>
+                <p class="text-gray-600 text-sm mb-2">বিশুদ্ধ ও স্বাস্থ্যকর আখরোট।</p>
+                <span class="text-blue-600 font-bold">৳ ৭৫০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-2.jpg" alt="Nut 3" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">বাদাম</h3>
+                <p class="text-gray-600 text-sm mb-2">তাজা ও খাঁটি বাদাম।</p>
+                <span class="text-blue-600 font-bold">৳ ৪৫০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-3.jpg" alt="Nut 4" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">পেস্তা বাদাম</h3>
+                <p class="text-gray-600 text-sm mb-2">স্বাদে ও গুণে অনন্য পেস্তা।</p>
+                <span class="text-blue-600 font-bold">৳ ১২০০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-4.jpg" alt="Nut 5" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">হ্যাজেল নাট</h3>
+                <p class="text-gray-600 text-sm mb-2">বিশুদ্ধ হ্যাজেল নাট।</p>
+                <span class="text-blue-600 font-bold">৳ ৯০০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-5.jpg" alt="Nut 6" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">চিনাবাদাম</h3>
+                <p class="text-gray-600 text-sm mb-2">তাজা চিনাবাদাম।</p>
+                <span class="text-blue-600 font-bold">৳ ২২০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-1.jpg" alt="Nut 7" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">ব্রাজিল নাট</h3>
+                <p class="text-gray-600 text-sm mb-2">স্বাস্থ্যকর ব্রাজিল নাট।</p>
+                <span class="text-blue-600 font-bold">৳ ১৩০০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-2.jpg" alt="Nut 8" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">ম্যাকাডেমিয়া নাট</h3>
+                <p class="text-gray-600 text-sm mb-2">বিশুদ্ধ ম্যাকাডেমিয়া নাট।</p>
+                <span class="text-blue-600 font-bold">৳ ১৫০০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-3.jpg" alt="Nut 9" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">পাইন নাট</h3>
+                <p class="text-gray-600 text-sm mb-2">স্বাদে অনন্য পাইন নাট।</p>
+                <span class="text-blue-600 font-bold">৳ ২০০০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-4.jpg" alt="Nut 10" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">
+
+                </h3>
+                <p class="text-gray-600 text-sm mb-2">তাজা ও খাঁটি তিল।</p>
+                <span class="text-blue-600 font-bold">৳ ৩০০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-5.jpg" alt="Nut 11" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">চিয়া সিড</h3>
+                <p class="text-gray-600 text-sm mb-2">পুষ্টিকর চিয়া সিড।</p>
+                <span class="text-blue-600 font-bold">৳ ৮০০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="./images/nuts/nut-2.jpg" alt="Nut 12" class="h-32 w-full object-cover rounded">
+                <h3 class="text-lg font-semibold mb-1">ফ্ল্যাক্স সিড</h3>
+                <p class="text-gray-600 text-sm mb-2">স্বাস্থ্যকর ফ্ল্যাক্স সিড।</p>
+                <span class="text-blue-600 font-bold">৳ ৬৫০/কেজি</span>
+                <a href="#"
+                    class="
+                    mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">ক্রয়
+                    করুন</a>
+            </div>
+        </div>
+        <div class="text-center mt-10">
+            <a href="#"
+                class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-500 ease-in-out">আরও
+                দেখুন</a>
+        </div>
+
+        <footer class="bg-gray-100 mt-16 py-8 rounded-lg shadow-inner">
+            <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center space-x-3">
+                    <img src="./images/logo.png" alt="Logo" class="h-10 w-auto">
+                    <span class="font-bold text-lg text-gray-700">Mabrur Natural House</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="./index.html" class="text-gray-600 hover:text-blue-600 transition">হোম</a>
+                    <a href="./dates.html" class="text-gray-600 hover:text-blue-600 transition">খেজুর</a>
+                    <a href="./nuts.html" class="text-gray-700 hover:text-blue-600 font-medium">বাদাম</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">যোগাযোগ</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" aria-label="Facebook" class="text-gray-500 hover:text-blue-600 transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 5 3.657 9.127 8.438 9.877v-6.987h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.883h2.773l-.443 2.89h-2.33v6.987C18.343 21.127 22 17 22 12z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="text-gray-500 hover:text-blue-600 transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-6 text-center text-gray-500 text-sm">
+                &copy; 2024 Mabrur Natural House. All rights reserved.
+            </div>
+        </footer>
+
+
+
+
+
+    </section>
+</body>
+
+</html>
